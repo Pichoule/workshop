@@ -1,16 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=workshopb32", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
-    }
-catch(PDOException $e)
-    {
-    echo "Connection failed: " . $e->getMessage();
-    }
+	define ('DB_NOM' , 'mysql:host=localhost;dbname=workshopb32');
+	define ('DB_USER' , 'root');
+	define ('DB_PASSWORD' , '');
+	$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+	$p_base = new PDO(DB_NOM, DB_USER, DB_PASSWORD, $pdo_options);
+	$p_base->exec("Set character set utf8");
 ?>
