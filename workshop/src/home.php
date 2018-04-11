@@ -11,8 +11,10 @@
 </head>
 <body>
     <?php
+    include 'requetes.php';
         try {
-            if (/*Requete connexion validée*/) {
+            getConnexionEtu();
+            if ($) {
                 if ($donnees["Type"] == 1) {
                     echo '':
                 } elseif ($donnees["Type"] == 2) {
