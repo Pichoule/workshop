@@ -1,3 +1,28 @@
 h1{
     text-align: center;
 }
+
+.navbar-brand{
+    background-color: lightgrey;
+    width: 100%;
+}
+
+.title{
+    width: 100%;
+    padding-left: auto;
+    padding-top: 15px;
+}
+.section{
+    width: 500px;
+    padding-left: 450px;
+}
+
+.input{
+    width: 500px;
+    padding-left: 50%;
+}
+
+.center{
+    margin: auto;
+    width: 500px;
+}
