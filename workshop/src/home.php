@@ -11,14 +11,19 @@
 </head>
 <body>
     <?php
-    try 
-    if ($donnees["Type"] == 1) {
-        
-    } elseif ($donnees["Type"] == 2) {
-        
-    } elseif ($donnees["Type"] == 3) {
-        
-    }
+        try {
+            if (/*Requete connexion validée*/) {
+                if ($donnees["Type"] == 1) {
+                    echo '':
+                } elseif ($donnees["Type"] == 2) {
+                    echo '':
+                } elseif ($donnees["Type"] == 3) {
+                    echo '':
+                }
+            }
+        } catch (Exception $e) {
+            echo 'Exception reçue : ',  $e->getMessage(), "\n";
+        }
     ?>
 </body>
 </html>
